@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <img src="new.jpg" alt="flower" class="background"> -->
+    <div class="signup-container">
+        <h1>Welcome To Petals</h1>
+        <form action="" name="myForm" id="sform" method="post" onsubmit="return validateForm()" method="post">
+
+
+            <div id="name">
+                <i class='fa fa-user'></i>
+                <input type="text" name="fname" class="input" placeholder="Enter your first name" required>
+                <div class="formerror"></div>
+            </div>
+            <div id="lastname">
+                <i class='fa fa-user'></i>
+                <input type="text" name="lname" class="input" placeholder="Enter your last name" required>
+                <div class="formerror"></div>
+            </div>
+            <div id="email">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="femail" class="input" placeholder="Enter your email" required>
+                <div class="formerror"></div>
+            </div>
+            <div id="phone">
+                <i class="fas fa-phone"></i>
+                <input type="type" name="fphone" class="input" placeholder="Enter phone no" required>
+                <div class="formerror"></div>
+            </div>
+            <div id="password">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="pass" class="input" placeholder="Enter password" required>
+                <div class="formerror"></div>
+            </div>
+            <div id="cpassword">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="cpass" class="input" placeholder="Confirm password" required>
+                <div class="formerror"></div>
+            </div>
+
+
+            <input type="submit" class="btn" value="SignUp">
+
+            <br>
+            <a href="#" class="input">Already a User?</a>
+
+            <button class="btn"><a href="login.html">Log in</a></button>
+        </form>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>
